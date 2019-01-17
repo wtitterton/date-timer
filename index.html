@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+  </head>
+    <body>
+      <div id="countdown">
+       <div class="con">
+         <div class="heading"> <h1 class="heading">Time till Holiday</h1></div>
+          <div class="clock-con">
+            <div id="clock">
+               <span></span>
+                <span></span>
+                <span></span>
+                 <span></span>
+            </div>
+            <div id="units">
+              <span>DAYS</span>
+              <span>HOURS</span>
+              <span>MINUTES</span>
+              <span>SECONDS</span>
+            </div>
+            </div>
+        </div>
+         
+      </div> 
+       
+       <div class="sea">
+       </div> 
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="fish.js"></script>
+      <script type="text/javascript" src="lettering.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $('.heading h1').lettering('words');
+            $('.con').delay(900).animate({
+              'opacity': 1
+            },1000);
+        });
+      
+      </script>
+
+      
+   </body>   
+</html>  
